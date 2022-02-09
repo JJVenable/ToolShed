@@ -1,7 +1,7 @@
 # ToolShed
 ## February 2022
 ## By: Joseph Venable
-[Github](https://github.com/JJVenable)
+[Github](https://github.com/JJVenable) ||
 [Linkedin](https://www.linkedin.com/in/jjvenable/)
 ***
 
