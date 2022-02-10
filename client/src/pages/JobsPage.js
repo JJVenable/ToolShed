@@ -1,3 +1,12 @@
+import React from 'react'
 
-<h2>These are all the jobs</h2>
-<h4><JobsList /></h4>
+function JobsPage() {
+return (
+  <div className="jobs-page">
+    <h3>This is JobsPage</h3>
+    {/* <h4><TruckList /></h4> */}
+    
+  </div>
+)
+}
+export default JobsPage

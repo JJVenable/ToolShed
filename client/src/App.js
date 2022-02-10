@@ -7,6 +7,11 @@ import { useEffect, useState } from 'react'
 import {Route} from 'react-router-dom'
 
 import Home from './pages/Home'
+import JobsPage from './pages/JobsPage'
+import ToolsPage from './pages/ToolsPage'
+import TruckDetails from './pages/TruckDetails'
+import TrucksPage from './pages/TrucksPage'
+
 function App() {
 const [tools, setTools] = useState([])
 const [trucks, setTrucks] = useState([])
@@ -28,35 +33,41 @@ const [jobs, setJobs] = useState([])
 
   const getTrucks = async () => {
     const response = await axios.get('http://localhost:8000/trucks/');
+    console.log(response)
     setTrucks(response.data[0]);
   };
   const getJobs = async () => {
       const response = await axios.get('http://localhost:8000/jobs/');
+      console.log(response)
       setJobs(response.data[0]);
     };
   const getTools = async () => {
       const response = await axios.get('http://localhost:8000/tools/');
+      console.log(response)
+      // console.table(response)
       setTools(response.data[0]);
     };
 // ================
 useEffect(() => {
-  // getTrucks();
-
-  // getJobs();
-
-  // getTools();
+  getTrucks();
+  getJobs();
+  getTools();
 }, []);
 // =================
 
   return (
     <div className="App">
-      {/* <header className="App-header">Oh Hi Mark!</header> */}
-      {/* <componentForTrucks onGetTrucks={getTrucks}/> */}
+      {/* <Nav /> */}
       <h3> Hi Casey</h3>
+
       <main>
         <Route exact path="/" component={Home} />
+        <Route exact path='/jobspage' component= {JobsPage} />
+        <Route exact path='/toolspage' component= {ToolsPage} />
+        <Route exact path='/truckdetails' component= {TruckDetails} />
+        <Route exact path='/truckspage' component= {TrucksPage} />
+      
       </main>
-      {/* <Home /> */}
     </div>
   )
 }
