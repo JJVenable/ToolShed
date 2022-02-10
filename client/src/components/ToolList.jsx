@@ -5,7 +5,7 @@ const state = {
 };
 
 export const ToolList = (props) => {
-  const { filteredTools, onUpdateJob } = props;
+  const { filteredTools, onUpdateTool } = props;
   return (
     <div>
       {filteredTools.map((t) => {

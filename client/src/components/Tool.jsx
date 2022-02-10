@@ -1,9 +1,9 @@
 const state = {
   tool: {},
   //function that makes the API call for PUT (passed down from App level),
-  onUpdateJob: nameofcall(),
-  //  onDeleteJob: //same as above,
-  // onCreateJob: //same
+  onUpdateTool: nameofcall(),
+  //  onDeleteTool: //same as above,
+  // onCreateTool: //same
 };
 
 export const Tool = (props) => {

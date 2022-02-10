@@ -2,8 +2,8 @@ const state = {
   truck: {},
   //function that makes the API call for PUT (passed down from App level),
   onUpdateTruck: nameofcall(),
-  //  onDeleteJob: //same as above,
-  // onCreateJob: //same
+  //  onDeleteTruck: //same as above,
+  // onCreateTruck: //same
 };
 
 export const Truck = (props) => {

@@ -5,6 +5,6 @@ return (
   <div className="home-page">
     <h3>This is home</h3>
     <Tools />
-    {/* tools??? */}
+    {/* tools??? Probably change to trucks for real usage*/}
   </div>
 )
