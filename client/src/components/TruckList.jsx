@@ -1,16 +1,16 @@
-const state = {
-  filteredTrucks: [
-    //this stuff comes in from the API
-  ],
-};
+import React, { useEffect, useState } from 'react';
+import Truck from './Truck'
+
 
 export const TruckList = (props) => {
-  const { filteredTrucks, onUpdateTruck } = props;
+  const { filteredTrucks } = props;
+
   return (
     <div>
-      {filteredTrucks.map((t) => {
-        return <Truck trucks={t} />;
-      })}
+      <h2>This is component Truck list </h2>
+      {filteredTrucks.map((t, index) => {
+        return <Truck trucks={t} key={index} />;
+      })} 
     </div>
   );
 };
