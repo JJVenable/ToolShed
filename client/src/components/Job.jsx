@@ -15,7 +15,7 @@ export const Job = (props) => {
     console.log(`update comment in ${job.id}`)
     console.log(form)
         const res = await axios.put(`http://127.0.0.1:8000/jobs/${job.id}`, form);
-    // window.location.reload()
+    window.location.reload()
   }
   return (
     <div>
