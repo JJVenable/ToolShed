@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 
 export const Truck = (props) => {
-  const { trucks } = props;
-  console.log(trucks)
+  const { truck, onUpdateTruck } = props;
+  console.log(truck)
   console.log("above from truck page")
   return (
     <div>
       <div class='truck-card'>
-      <h2>Truck number: {trucks.number}</h2>
-      <h3>Truck driver: {trucks.drivers}</h3>
-      <h3>Notes: {trucks.notes}</h3> 
-      <button>Delete Truck</button>
+      <h2>Truck number: {truck.number}</h2>
+      <h3>Truck driver: {truck.drivers}</h3>
+      <h3>Notes: {truck.notes}</h3> 
+    <button onClick={onUpdateTruck(truck.id)}>Update Truck</button>
       </div>
     
       {/* <JobList filteredJobs={trucks.jobs} /> */}
