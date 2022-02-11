@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react';
-
-const state = {
-  filteredTools: [
-    //this stuff comes in from the API
-  ],
-};
+import Tool from './Tool'
 
 export const ToolList = (props) => {
   const { filteredTools, onUpdateTool } = props;
+  console.log(filteredTools);
   return (
     <div>
-      {filteredTools.map((t) => {
-        return <Tool tools={t} />;
-      })}
+      <h2>This is component Tool list </h2>
+      <div>
+        {filteredTools.map((t) => {
+          return <Tool tool={t} key={t.id} onUpdateTool={onUpdateTool} />;
+        })}
+      </div>
     </div>
   );
 };

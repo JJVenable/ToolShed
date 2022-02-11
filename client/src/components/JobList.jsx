@@ -1,29 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import Job from './Job'
-const state = {
-  filteredJobs: [
-    //this stuff comes in from the API
-    { ...job1 },
-    { ...job2 },
-  ],
-  //function that makes the API call for PUT (passed down from App level),
-  onUpdateJob: nameofcall(),
-  //  onDeleteJob: //same as above,
-  // onCreateJob: //same
-};
+import React, { useEffect, useState } from "react";
+import Job from "./Job";
 
 export const JobList = (props) => {
   const { filteredJobs, onUpdateJob } = props;
-  console.log(filteredJobs)
+  console.log(filteredJobs);
   return (
     <div>
       <h2>This is component JobList</h2>
-    
-    <div>
-      {filteredJobs.map((j) => {
-        return <Job job={j} key={j.id} onUpdateJob={onUpdateJob} />;
-      })}
-    </div>
+      <div>
+        {filteredJobs.map((j) => {
+          return <Job job={j} key={j.id} onUpdateJob={onUpdateJob} />;
+        })}
+      </div>
     </div>
   );
 };

@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from 'react';
 
-const state = {
-  tool: {},
-  //function that makes the API call for PUT (passed down from App level),
-  onUpdateTool: nameofcall(),
-  //  onDeleteTool: //same as above,
-  // onCreateTool: //same
-};
-
 export const Tool = (props) => {
   const { tool, onUpdateTool } = props;
+  console.log(tool)
+  console.log("above from tool")
   return (
     <div>
-      <h1>{tool.name}</h1>
-      <h3>{tool.notes}</h3>
-      <button onClick={console.log("I am updating stuff")}>Update</button>
+      <div className='tool-card'>
+      <h2>Name: {tool.name}</h2>
+      <h3>Notes: {tool.notes}</h3> 
+      <h3>{tool.img}</h3> 
+    <button onClick={()=>onUpdateTool(tool.id)}>Update Tool</button>
+    {/* <button onClick={()=>onDeleteTruck(truck.id)}>Delete Truck</button> */}
+      </div>
+    
+      {/* <JobList filteredJobs={trucks.jobs} /> */}
+      {/* <ToolList filteredJobs={trucks.tools} /> */}
     </div>
   );
 };

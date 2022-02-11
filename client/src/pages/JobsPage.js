@@ -15,7 +15,7 @@ function JobsPage(props) {
 return (
   <div className="jobs-page">
     <h3>This is JobsPage</h3>
-    <h4><TruckList filteredJobs={jobs} onUpdateJob={updateJob}/></h4>
+    <h4><JobList filteredJobs={jobs} onUpdateJob={updateJob}/></h4>
     
   </div>
 )
