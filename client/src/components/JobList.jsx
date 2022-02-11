@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import Job from './Job'
 const state = {
   filteredJobs: [
     //this stuff comes in from the API
