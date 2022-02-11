@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import JobsPage from '../pages/JobsPage';
 
 export const Job = (props) => {
-  const { job, onUpdateJob } = props;
+  const { job, onUpdateJob, onDeleteJob } = props;
   console.log(job)
   console.log("above from JOB page")
   return (
