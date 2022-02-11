@@ -14,6 +14,8 @@ export const Job = (props) => {
       {/* <h3>Trucks: {job.truck}</h3> */}
       <h3>Comments: {job.comments}</h3>  
     <button onClick={()=>onUpdateJob(job.id)}>Update Job</button>
+    <button onClick={()=>onDeleteJob(job.id)}>Delete Job</button>
+
     {/* <button onClick={()=>onDeleteTruck(truck.id)}>Delete Truck</button> */}
       </div>
     

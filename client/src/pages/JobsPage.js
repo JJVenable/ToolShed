@@ -6,7 +6,10 @@ function JobsPage(props) {
   const { jobs } = props
   //job filtering loop
   //api call crud?
-
+  const deleteJob = async (id) => {
+      console.log(`you tried to delete job${id}`)
+      const res = await axios.delete(`http://127.0.0.1:8000/jobs/${id}`);
+    }
 
   const updateJob = (id) => {
     console.log(`job ${id} updated!`)
