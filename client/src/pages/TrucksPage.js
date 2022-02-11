@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import TruckList from '../components/TruckList'
-// import AddBooks from '../components/AddBooks';
+import axios from 'axios'
 
 function TrucksPage(props) {
   const { trucks } = props
-  //place logic for truck filtering around line 7 (all trucks currently)
+  //place logic for truck filtering right here (all trucks currently)
   //add api call for update Trucks
   //add api call for delete Trucks
   //add api call for put/update Trucks

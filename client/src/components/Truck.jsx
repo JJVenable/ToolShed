@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Popup from 'reactjs-popup'
 
 export const Truck = (props) => {
   const { truck, onUpdateTruck } = props;
@@ -11,6 +12,7 @@ export const Truck = (props) => {
       <h3>Truck driver: {truck.drivers}</h3>
       <h3>Notes: {truck.notes}</h3>  
     <button onClick={()=>onUpdateTruck(truck.id)}>Update Truck</button>
+    {/* <button onClick={()=>onDeleteTruck(truck.id)}>Delete Truck</button> */}
       </div>
     
       {/* <JobList filteredJobs={trucks.jobs} /> */}
