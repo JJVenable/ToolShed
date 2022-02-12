@@ -20,7 +20,7 @@ function JobsPage(props) {
   }
 return (
   <div className="jobs-page">
-    {/* <h3>This is JobsPage</h3> */}
+    <h3>Active Jobs</h3>
     <h4><JobList filteredJobs={jobs} onUpdateJob={updateJob} onDeleteJob={deleteJob}/></h4>
   </div>
 )

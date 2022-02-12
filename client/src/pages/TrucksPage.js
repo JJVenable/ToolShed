@@ -14,7 +14,7 @@ function TrucksPage(props) {
   }
 return (
   <div className="trucks-page">
-    {/* <h3>This is TrucksPage</h3> */}
+    <h3>All of our active work trucks</h3>
     <h4><TruckList filteredTrucks={trucks} onUpdateTruck={updateTruck} /></h4>
     
   </div>

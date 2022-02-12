@@ -30,7 +30,7 @@ function Home() {
 return (
   <div className="home-page">
     {/* <h3>This is home</h3> */}
-    <h1>Put in a request/Add a task</h1>
+    <h3>Put in a request/Add a task</h3>
       <form onSubmit={handleSubmit} className='formOne' >
         <input
           type="text-area"

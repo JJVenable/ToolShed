@@ -5,7 +5,7 @@ export const TruckList = (props) => {
   const { filteredTrucks, onUpdateTruck } = props;
   console.log(filteredTrucks);
   return (
-    <div>
+    <div className = 'truck-list'>
       {/* <h2>This is component Truck list </h2> */}
       <div>
         {filteredTrucks.map((tr) => {
