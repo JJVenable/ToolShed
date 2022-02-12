@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+button {
+    margin: auto;
+    }
 .App {
   text-align: center;
   background-image: url(../public/img/WhiteBrick.jpeg);
@@ -24,7 +31,6 @@
   flex-direction: row;
   float: left;
   width: 25%;
-  display:block;
   text-align: center;
   color: rgb(8, 61, 81);
   font-weight: 700;
@@ -37,7 +43,13 @@
   font-weight: bold;
   background-color: grey
 }
-
+/* .popBox {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  
+} */
 
 .App-logo {
   height: 40vmin;
