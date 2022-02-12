@@ -20,12 +20,12 @@ export const Job = (props) => {
   return (
     <div>
       <div className='job-card'>
-      <h3>Suggested Tools: {job.suggested_tools}</h3>
-      <h4>Address: {job.address}</h4>
+      <h3>Address: {job.address}</h3>
       <h4>Scheduled: {job.scheduled}</h4>  
+      <h4>Suggested Tools: {job.suggested_tools}</h4>
       {/* <h3>Trucks: {job.truck}</h3> */}
       {/* / above , make a call and pull this in here with state*/}
-      <h3>Comments: {job.comments}</h3>  
+      <h4>Comments: {job.comments}</h4>  
       {/* ---------------------------------------------------------------- */}
 
     
