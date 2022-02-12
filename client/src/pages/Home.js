@@ -18,7 +18,7 @@ function Home() {
     async (e) => {
       (e).preventDefault()
       setLogForm(logForm)
-      const res = await axios.post('http://127.0.0.1:8000/jobs', logForm);
+      const res = await axios.post('http://127.0.0.1:8000/jobs/', logForm);
       console.log(res)
       console.log(logForm)
       window.location.reload()
