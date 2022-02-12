@@ -6,7 +6,7 @@ export const JobList = (props) => {
   console.log(filteredJobs);
   return (
     <div>
-      <h2>This is component JobList</h2>
+      <h2>Active Jobs</h2>
       <div>
         {filteredJobs.map((j) => {
           return <Job job={j} key={j.id} onUpdateJob={onUpdateJob} onDeleteJob={onDeleteJob} />;

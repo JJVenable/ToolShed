@@ -19,17 +19,17 @@ function Home() {
       (e).preventDefault()
       setLogForm(logForm)
       const res = await axios.post('http://127.0.0.1:8000/jobs/', logForm);
-      console.log(res)
-      console.log(logForm)
+      // console.log(res)
+      // console.log(logForm)
       window.location.reload()
-      console.log("working")
+      // console.log("working")
     }
   
 
 
 return (
   <div className="home-page">
-    <h3>This is home</h3>
+    {/* <h3>This is home</h3> */}
     <h1>Put in a request/Add a task</h1>
       <form onSubmit={handleSubmit} className='formOne' >
         <input

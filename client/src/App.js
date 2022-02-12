@@ -44,7 +44,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <h3> Hi, We've got this. </h3>
+      {/* <h3> Hi, We've got this. </h3> */}
 
       <main>
         <Route exact path="/" component={Home} />

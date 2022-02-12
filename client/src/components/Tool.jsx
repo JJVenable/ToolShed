@@ -7,11 +7,11 @@ export const Tool = (props) => {
   return (
     <div>
       <div className='tool-card'>
-      <h2>Name: {tool.name}</h2>
-      <h3>Notes: {tool.notes}</h3> 
-      <h3>{tool.img}</h3> 
-    <button onClick={()=>onUpdateTool(tool.id)}>Update Tool</button>
-    {/* <button onClick={()=>onDeleteTruck(truck.id)}>Delete Truck</button> */}
+      <h3>Name: {tool.name}</h3>
+      <h4>Notes: {tool.notes}</h4> 
+      {/* <h3>{tool.img}</h3>  */}
+    {/* <button onClick={()=>onUpdateTool(tool.id)}>Update Tool</button> */}
+    
       </div>
     
       {/* <JobList filteredJobs={trucks.jobs} /> */}

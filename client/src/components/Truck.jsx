@@ -8,11 +8,10 @@ export const Truck = (props) => {
   return (
     <div>
       <div className='truck-card'>
-      <h2>Truck number: {truck.number}</h2>
-      <h3>Truck driver: {truck.drivers}</h3>
-      <h3>Notes: {truck.notes}</h3>  
-    <button onClick={()=>onUpdateTruck(truck.id)}>Update Truck</button>
-    {/* <button onClick={()=>onDeleteTruck(truck.id)}>Delete Truck</button> */}
+      <h3>Truck number: {truck.number}</h3>
+      <h4>Truck driver: {truck.drivers}</h4>
+      <h4>Notes: {truck.notes}</h4>  
+    {/* <button onClick={()=>onUpdateTruck(truck.id)}>Update Truck</button> */}
       </div>
     
       {/* <JobList filteredJobs={trucks.jobs} /> */}

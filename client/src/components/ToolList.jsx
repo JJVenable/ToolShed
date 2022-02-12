@@ -6,7 +6,7 @@ export const ToolList = (props) => {
   console.log(filteredTools);
   return (
     <div>
-      <h2>This is component Tool list </h2>
+      {/* <h2>This is component Tool list </h2> */}
       <div>
         {filteredTools.map((t) => {
           return <Tool tool={t} key={t.id} onUpdateTool={onUpdateTool} />;

@@ -6,7 +6,7 @@ export const TruckList = (props) => {
   console.log(filteredTrucks);
   return (
     <div>
-      <h2>This is component Truck list </h2>
+      {/* <h2>This is component Truck list </h2> */}
       <div>
         {filteredTrucks.map((tr) => {
           return <Truck truck={tr} key={tr.id} onUpdateTruck={onUpdateTruck} />;

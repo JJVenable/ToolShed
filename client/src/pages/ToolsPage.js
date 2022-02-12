@@ -19,7 +19,7 @@ function ToolsPage(props) {
   }
 return (
   <div className="tools-page">
-    <h3>This is ToolsPage</h3>
+    {/* <h3>This is ToolsPage</h3> */}
     <h3> These are the types of tools we have on trucks</h3>
     <h4><ToolList filteredTools={tools} onUpdateTool={updateTool} /></h4>
     {/* <h4><ToolList filteredTools={tools} onUpdateTool={deleteTool} /></h4> dont bring this back, it will map through again */}
