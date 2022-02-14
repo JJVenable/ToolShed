@@ -6,31 +6,35 @@
 ***
 
 ### ***Description:***
-* This project is for keeping track of tools. (Loan outs/maintenance schedules ect)
-* The user will be able to put tools on diferent lists.
-  * The backend will be set up with a joining table rather than a many to many relationship
+* This project is for keeping of jobs for a fleet of trucks
+* The user/management team is able to add new jobs to the queue, and update the comments as the job progresses.
+  * The user is also able to close job tickets.
 
 ### ***Technologies Used:***
 1. React
 2. Redux
 3. Django
-4. Heroku
+4. Surge
 
 ### ***Screenshots:***
 
 
 Pitch Images:
-![ERD](https://i.imgur.com/L7bgt9k.png)
+![ERD](https://i.imgur.com/6fF2z6E.png)
 
-![CHD](https://i.imgur.com/LCRunqF.png)
+![CHD](https://i.imgur.com/6GzbAgP.png)
 
+![JOB_SS](https://i.imgur.com/vnUQEjI.png)
+
+![TOOLS_SS](https://i.imgur.com/7HVJfzb.png)
 
 ### ***Task List:***
 - [ ] Add user authentication
-- [ ] Make homepage a list of each users tools, not a shared library
-- [ ] With conditional rendering 'transfer' an item to another user of "lent" to them.
-- [ ] Add an email reminder option
-  - [ ] Set some date tracker with an auto-remind option
+- [ ] Make homepage a list of each all jobs by Truck below the form
+- [ ] Link each Job to another component showing which trucks are listed with the job id.
+- [ ] Make each tool link to a separate page showing which trucks should have that tool.
+- [ ] Deploy backend on heroku
+-   [ ] Change API calls to link new backend location 
 
 ### ***Credits***
 
