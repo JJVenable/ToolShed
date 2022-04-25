@@ -9,11 +9,11 @@
 * This project is for keeping of jobs for a fleet of trucks
 * The user/management team is able to add new jobs to the queue, and update the comments as the job progresses.
   * The user is also able to close job tickets.
+* This was a first project to use Python and Django.
 
 ### ***Technologies Used:***
 1. React
-2. Redux
-3. Django
+2. Django
 4. Surge
 
 ### ***Screenshots:***
@@ -35,11 +35,6 @@ Pitch Images:
 - [ ] Make each tool link to a separate page showing which trucks should have that tool.
 - [ ] Deploy backend on heroku
 -   [ ] Change API calls to link new backend location 
-
-### ***Credits***
-
-Technical Skills:
-[MarkDownHomework](https://github.com/JJVenable/u1_hw_markdown)
 
 
 ---
