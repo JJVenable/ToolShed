@@ -1,4 +1,5 @@
 # ToolShed
+Front End
 ## February 2022
 ## By: Joseph Venable
 [Github](https://github.com/JJVenable) ||
@@ -10,6 +11,7 @@
 * The user/management team is able to add new jobs to the queue, and update the comments as the job progresses.
   * The user is also able to close job tickets.
 * This was a first project to use Python and Django.
+* This is a sister repo to [DjangoShed](https://github.com/JJVenable/DjangoShed/)
 
 ### ***Technologies Used:***
 1. React
